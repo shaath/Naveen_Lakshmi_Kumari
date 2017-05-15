@@ -1,0 +1,15 @@
+package junit;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+
+public class P_LoginTest extends Junitmaster
+{
+	@Test
+	public void login()
+	{
+		driver.findElement(By.id("txtuId")).sendKeys("Admin");
+		driver.findElement(By.id("txtPword")).sendKeys("admin");
+		driver.findElement(By.id("login")).click();
+	}
+}
